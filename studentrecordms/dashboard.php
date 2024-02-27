@@ -1,4 +1,3 @@
-User
 <?php session_start();
 
 include('includes/dbconnection.php');
@@ -292,7 +291,7 @@ $cities=mysqli_num_rows($query5);
 
 <!-- Chatbot Iframe -->
 <div id="chatbot-frame">
-  <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe>
+  <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/student-bot?s=YOUR_SECRET_HERE"></iframe>
 </div>
 
 	
@@ -309,9 +308,16 @@ $cities=mysqli_num_rows($query5);
 
 	<!-- Custom Theme JavaScript -->
 	<script src="dist/js/sb-admin-2.js" type="text/javascript"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var chatbotButton = document.getElementById('open-chatbot');
+    var chatbotFrame = document.getElementById('chatbot-frame');
 
-
-
+    chatbotButton.addEventListener('click', function () {
+      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
+    });
+  });
+</script>
 
 	
 	<script>
@@ -342,17 +348,6 @@ $("#loaderIcon").hide();
 error:function (){}
 });
 }
-</script>
-	<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var chatbotButton = document.getElementById('open-chatbot');
-    var chatbotFrame = document.getElementById('chatbot-frame');
-
-    chatbotButton.addEventListener('click', function () {
-      // Toggle the visibility of the chatbot frame
-      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
-    });
-  });
 </script>
 </form>
 </body>

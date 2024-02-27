@@ -19,26 +19,6 @@ echo '<script>alert("Something went wrong. Please try again")</script>';
 echo '<script>window.location.href=add-course.php</script>';
 }
 }
-if(isset($_POST['submit'])){
-	$cshortname = $_POST['course-short'];
-	$cfullname = $_POST['course-full'];
-	$cdate = $_POST['cdate'];
-	$query = mysqli_query($con, "insert into tbl_course(cshort, cfull, cdate) values ('$cshortname', '$cfullname', '$cdate')");
-	if($query){
-		// If successful, show an alert and redirect to 'manage-courses.php'
-		echo '<script>alert("Course Added successfully")</script>';
-		echo "<script>window.location.href='manage-courses.php'</script>";
-	} else {
-		// If unsuccessful, show an alert and redirect to 'add-course.php'
-		echo '<script>alert("Something went wrong. Please try again")</script>';
-		echo '<script>window.location.href=add-course.php</script>';
-	}
-}
-<<<<<<< HEAD
-  }
-=======
-		
->>>>>>> bc6adbc124b79c0cca9e261c62cabbf37c61cdd1
 ?>
 <!DOCTYPE html>
 <html lang="en">

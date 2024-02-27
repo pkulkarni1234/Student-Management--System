@@ -353,6 +353,22 @@ error:function (){}
     });
   });
 </script>
+	<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var chatbotButton = document.getElementById('open-chatbot');
+    var chatbotFrame = document.getElementById('chatbot-frame');
+
+    chatbotButton.addEventListener('click', function () {
+      // Toggle the visibility of the chatbot frame
+      if (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') {
+        chatbotFrame.style.display = 'block';
+      } else {
+        chatbotFrame.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 </form>
 </body>
 </html>

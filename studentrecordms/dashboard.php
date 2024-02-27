@@ -291,7 +291,7 @@ $cities=mysqli_num_rows($query5);
 
 <!-- Chatbot Iframe -->
 <div id="chatbot-frame">
-  <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/student-bot?s=YOUR_SECRET_HERE"></iframe>
+  <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe>
 </div>
 
 	

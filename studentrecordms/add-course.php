@@ -5,7 +5,7 @@ if (strlen($_SESSION['aid']==0)) {
   header('location:logout.php');
   } else{
 
-/*if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 	
 $cshortname=$_POST['course-short'];
 $cfullname=$_POST['course-full'];
@@ -18,7 +18,7 @@ echo "<script>window.location.href='manage-courses.php'</script>";
 echo '<script>alert("Something went wrong. Please try again")</script>';
 echo '<script>window.location.href=add-course.php</script>';
 }
-}*/
+}
 if(isset($_POST['submit'])){
 	$cshortname = $_POST['course-short'];
 	$cfullname = $_POST['course-full'];
@@ -34,7 +34,11 @@ if(isset($_POST['submit'])){
 		echo '<script>window.location.href=add-course.php</script>';
 	}
 }
+<<<<<<< HEAD
+  }
+=======
 		
+>>>>>>> bc6adbc124b79c0cca9e261c62cabbf37c61cdd1
 ?>
 <!DOCTYPE html>
 <html lang="en">

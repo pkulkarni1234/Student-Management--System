@@ -314,11 +314,12 @@ $cities=mysqli_num_rows($query5);
     var chatbotFrame = document.getElementById('chatbot-frame');
 
     chatbotButton.addEventListener('click', function () {
-      // Toggle the display property without checking the current state
-      chatbotFrame.style.display = (chatbotFrame.style.display === 'none') ? 'block' : 'none';
+      // Toggle the visibility of the chatbot frame
+      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
     });
   });
 </script>
+
 
 
 	

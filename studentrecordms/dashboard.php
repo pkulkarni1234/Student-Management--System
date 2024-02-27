@@ -24,6 +24,40 @@ if (strlen($_SESSION['aid']==0)) {
 <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 <!-- Custom Fonts -->
 <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+  #chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  #open-chatbot {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #chatbot-frame {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  #chatbot-iframe {
+    border: none;
+    height: 502px;
+    max-height: 502px;
+    width: 300px; /* Adjust the width as needed */
+  }
+</style>
+
+
 </head>
 
 <body>
@@ -250,6 +284,16 @@ $cities=mysqli_num_rows($query5);
 		
 
 	</div>
+    <!-- Chatbot Button -->
+<div id="chatbot-button">
+  <button id="open-chatbot">Chat with Us</button>
+</div>
+
+<!-- Chatbot Iframe -->
+<div id="chatbot-frame">
+  <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/student-bot?s=YOUR_SECRET_HERE"></iframe>
+</div>
+
 	
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>
@@ -264,6 +308,17 @@ $cities=mysqli_num_rows($query5);
 
 	<!-- Custom Theme JavaScript -->
 	<script src="dist/js/sb-admin-2.js" type="text/javascript"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var chatbotButton = document.getElementById('open-chatbot');
+    var chatbotFrame = document.getElementById('chatbot-frame');
+
+    chatbotButton.addEventListener('click', function () {
+      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
+    });
+  });
+</script>
+
 	
 	<script>
 function courseAvailability() {

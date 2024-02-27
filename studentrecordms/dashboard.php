@@ -308,17 +308,7 @@ $cities=mysqli_num_rows($query5);
 
 	<!-- Custom Theme JavaScript -->
 	<script src="dist/js/sb-admin-2.js" type="text/javascript"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var chatbotButton = document.getElementById('open-chatbot');
-    var chatbotFrame = document.getElementById('chatbot-frame');
 
-    chatbotButton.addEventListener('click', function () {
-      // Toggle the visibility of the chatbot frame
-      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
-    });
-  });
-</script>
 
 
 
@@ -351,6 +341,17 @@ $("#loaderIcon").hide();
 error:function (){}
 });
 }
+</script>
+	<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var chatbotButton = document.getElementById('open-chatbot');
+    var chatbotFrame = document.getElementById('chatbot-frame');
+
+    chatbotButton.addEventListener('click', function () {
+      // Toggle the visibility of the chatbot frame
+      chatbotFrame.style.display = (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') ? 'block' : 'none';
+    });
+  });
 </script>
 </form>
 </body>

@@ -15,10 +15,7 @@ $sb1=$_POST['sub1'];
 $sb2=$_POST['sub2'];
 $sb3=$_POST['sub3'];
 $sb4=$_POST['sub4'];
-
-$reg="insert into subject(cshort,cfull,sub1,sub2,sub3,sub4) values('$cshortname','$cfullname','$sb1','$sb2','$sb3','$sb4')";
-$query=($con,$reg);
-
+$query=mysqli_query($con,"insert into subject(cshort,cfull,sub1,sub2,sub3,sub4)values('$cshortname','$cfullname','$sb1','$sb2','$sb3','$sb4')");
 if($query){
 echo '<script>alert("Subject Added successfully")</script>';
 echo "<script>window.location.href='manage-subjects.php'</script>";
@@ -210,3 +207,4 @@ error:function (){}
 
 </html>
 <?php } ?>
+[]

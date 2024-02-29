@@ -24,6 +24,45 @@ if (strlen($_SESSION['aid']==0)) {
 <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 <!-- Custom Fonts -->
 <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+
+
+<style>
+  #chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  #open-chatbot {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #chatbot-frame {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  #chatbot-iframe {
+    border: none;
+    height: 502px;
+    max-height: 502px;
+    width: 300px; /* Adjust the width as needed */
+  }
+</style>
+
+
 </head>
 
 <body>
@@ -250,6 +289,16 @@ $cities=mysqli_num_rows($query5);
 		
 
 	</div>
+
+        <!-- Chatbot Button -->
+<div id="chatbot-button">
+  <button id="open-chatbot">Chat with Us</button>
+</div>
+
+<!-- Chatbot Iframe -->
+<div id="chatbot-frame">
+ <iframe src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o" style="height: 400px; max-height: 400px;"></iframe>
+</div>
 	
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>

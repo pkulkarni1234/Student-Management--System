@@ -11,7 +11,7 @@ $cshortname=$_POST['course-short'];
 $cfullname=$_POST['course-full'];
 $cdate=$_POST['cdate'];
 $reg="insert into tbl_course(cshort,cfull,cdate) values('$cshortname','$cfullname','$cdate')";
-$query=mysqli_query($con,$reg);
+mysqli_query($con,$reg);
 if($query){
 echo '<script>alert("Course Added successfully")</script>';
 echo "<script>window.location.href='manage-courses.php'</script>";

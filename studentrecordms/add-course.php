@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
 $cshortname=$_POST['course-short'];
 $cfullname=$_POST['course-full'];
 $cdate=$_POST['cdate'];
-$reg="insert into tbl_course(cshort,cfull,cdate)values('$cshortname','$cfullname','$cdate')";
+$reg="insert into tbl_course(cshort,cfull,cdate) values('$cshortname','$cfullname','$cdate')";
 $query=mysqli_query($con,$reg);
 if($query){
 echo '<script>alert("Course Added successfully")</script>';

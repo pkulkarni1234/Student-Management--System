@@ -35,6 +35,7 @@ if (strlen($_SESSION['aid']==0)) {
     bottom: 20px;
     right: 20px;
     z-index: 999;
+    padding: top 50px;
   }
 
   #open-chatbot {

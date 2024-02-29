@@ -51,6 +51,9 @@
                    <li>
                             <a href="session.php"><i class="fa fa-calendar fa-fw"></i>Session</a>
                   </li>
+                  <li>
+                            <a href="chatbot.php"><i class="fa fa-calendar fa-fw"></i>Chat with us</a>
+                  </li>
       
                         <li>
                    <a href="change-password.php"><i class="fa fa-cog fa-fw"></i> Change Password</a>

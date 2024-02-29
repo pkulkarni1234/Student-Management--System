@@ -94,7 +94,7 @@ if (strlen($_SESSION['aid']==0)) {
                                     <i class="fa fa-file fa-5x"></i>
                                 </div>
 
-<?php $query=mysqli_query($con,"SELECT cid FROM tbl_course");
+<?php $query=mysqli_query($con,"SELECT id FROM tbl_course");
 $listedcourses=mysqli_num_rows($query);
 
 ?>

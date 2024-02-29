@@ -284,8 +284,11 @@ $cities=mysqli_num_rows($query5);
 				</div>
 				
 			</div>
-			 <!-- Chatbot Button -->
-<div id="chatbot-button">
+			
+		</div>
+		
+ <!-- Chatbot Button -->
+ <div id="chatbot-button">
   <button id="open-chatbot">Chat with Us</button>
 </div>
 
@@ -293,9 +296,6 @@ $cities=mysqli_num_rows($query5);
 <div id="chatbot-frame">
  <iframe src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o" style="height: 400px; max-height: 400px;"></iframe>
 </div>
-		</div>
-		
-
 	</div>
 
        

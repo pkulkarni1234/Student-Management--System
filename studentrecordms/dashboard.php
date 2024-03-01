@@ -33,6 +33,15 @@ if (strlen($_SESSION['aid']==0)) {
             z-index: 999;
         }
 
+<<<<<<< HEAD
+    <style>
+  #chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+=======
         #chatIframe {
             height: 400px;
             max-height: 400px;
@@ -44,8 +53,38 @@ if (strlen($_SESSION['aid']==0)) {
             border-radius: 5px;
         }
     </style>
+>>>>>>> 3a7a07709e5c0d3af1606682b422ad77f4c35837
+
+  #open-chatbot {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+<<<<<<< HEAD
+  #chatbot-frame {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  #chatbot-iframe {
+    border: none;
+    height: 502px;
+    max-height: 502px;
+    width: 300px; /* Adjust the width as needed */
+  }
+</style>
 
 
+
+=======
+>>>>>>> 3a7a07709e5c0d3af1606682b422ad77f4c35837
 </head>
 
 <body>
@@ -265,7 +304,8 @@ $cities=mysqli_num_rows($query5);
 					</div>
 					
 				</div>
-				
+		
+
 			</div>
 			
 		</div>
@@ -273,14 +313,7 @@ $cities=mysqli_num_rows($query5);
 
 	</div>
 
-    <!-- Button to toggle the iframe -->
-    <button id="toggleIframeBtn" class="btn btn-primary">Toggle Chat</button>
-
-
-<!-- Iframe for the chat -->
-<!-- <iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe> -->
-	
-
+ 
     
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>

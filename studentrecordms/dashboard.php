@@ -251,7 +251,8 @@ $cities=mysqli_num_rows($query5);
 
 	</div>
     <!-- Button to toggle the iframe -->
-<button id="toggleIframeBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px;">Toggle Iframe</button>
+    <button id="toggleIframeBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; background-color: green;">Chat With Us</button>
+
 
 <!-- Iframe for the chat -->
 <iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o" style="height: 400px; max-height: 400px; display: none; position: fixed; bottom: 20px; right: 20px;"></iframe>

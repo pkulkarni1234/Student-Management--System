@@ -260,6 +260,7 @@ $cities=mysqli_num_rows($query5);
 document.addEventListener('DOMContentLoaded', function () {
     // Toggle the iframe when the button is clicked
     document.getElementById('toggleIframeBtn').addEventListener('click', function () {
+        event.preventDefault();  // Prevent the default form submission behavior
         var chatIframe = document.getElementById('chatIframe');
         chatIframe.style.display = (chatIframe.style.display === 'none' || chatIframe.style.display === '') ? 'block' : 'none';
     });

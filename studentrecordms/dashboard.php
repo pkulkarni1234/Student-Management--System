@@ -24,11 +24,26 @@ if (strlen($_SESSION['aid']==0)) {
 <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 <!-- Custom Fonts -->
 <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
-	rel="stylesheet">
+<style>
+        /* Custom CSS for the button and iframe */
+        #toggleIframeBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
 
-
-
+        #chatIframe {
+            height: 400px;
+            max-height: 400px;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 
 
 </head>
@@ -256,9 +271,24 @@ $cities=mysqli_num_rows($query5);
 		</div>
 		
 
+	</div>
 
-       
+    <!-- Button to toggle the iframe -->
+    <button id="toggleIframeBtn" class="btn btn-primary">Toggle Chat</button>
+
+<!-- Iframe for the chat -->
+<iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe>
 	
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Toggle the iframe when the button is clicked
+                document.getElementById('toggleIframeBtn').addEventListener('click', function () {
+                    var chatIframe = document.getElementById('chatIframe');
+                    chatIframe.style.display = (chatIframe.style.display === 'none' || chatIframe.style.display === '') ? 'block' : 'none';
+                });
+            });
+        </script>
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>
 

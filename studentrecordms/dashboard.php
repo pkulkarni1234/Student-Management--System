@@ -312,6 +312,7 @@ $cities=mysqli_num_rows($query5);
 		
 
 	</div>
+    </div>
 
  
     

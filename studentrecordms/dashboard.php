@@ -13,7 +13,6 @@ if (strlen($_SESSION['aid']==0)) {
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="script.js"></script>
 <title>Dashboard</title>
 
 <link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
@@ -279,7 +278,7 @@ $cities=mysqli_num_rows($query5);
 
 
 <!-- Iframe for the chat -->
-<iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe>
+<!-- <iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe> -->
 	
 
     

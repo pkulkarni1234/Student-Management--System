@@ -24,49 +24,6 @@ if (strlen($_SESSION['aid']==0)) {
 <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 <!-- Custom Fonts -->
 <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<style>
-        /* Custom CSS for the button and iframe */
-        #toggleIframeBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-        }
-
-
-    
-  #chatbot-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-  }
-
-  #open-chatbot {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-
-  #chatbot-frame {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-
-  #chatbot-iframe {
-    border: none;
-    height: 502px;
-    max-height: 502px;
-    width: 300px; /* Adjust the width as needed */
-  }
-</style>
 </head>
 
 <body>
@@ -286,18 +243,30 @@ $cities=mysqli_num_rows($query5);
 					</div>
 					
 				</div>
-		
-
+				
 			</div>
 			
 		</div>
 		
 
 	</div>
-    </div>
+    <!-- Button to toggle the iframe -->
+<button id="toggleIframeBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px;">Toggle Iframe</button>
 
- 
-    
+<!-- Iframe for the chat -->
+<iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o" style="height: 400px; max-height: 400px; display: none; position: fixed; bottom: 20px; right: 20px;"></iframe>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Toggle the iframe when the button is clicked
+    document.getElementById('toggleIframeBtn').addEventListener('click', function () {
+        var chatIframe = document.getElementById('chatIframe');
+        chatIframe.style.display = (chatIframe.style.display === 'none' || chatIframe.style.display === '') ? 'block' : 'none';
+    });
+});
+</script>
+
+	
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>
 
@@ -313,15 +282,6 @@ $cities=mysqli_num_rows($query5);
 	<script src="dist/js/sb-admin-2.js" type="text/javascript"></script>
 	
 	<script>
-<script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Toggle the iframe when the button is clicked
-                document.getElementById('toggleIframeBtn').addEventListener('click', function () {
-                    var chatIframe = document.getElementById('chatIframe');
-                    chatIframe.style.display = (chatIframe.style.display === 'none' || chatIframe.style.display === '') ? 'block' : 'none';
-                });
-            });
-        </script>
 function courseAvailability() {
 	$("#loaderIcon").show();
 jQuery.ajax({

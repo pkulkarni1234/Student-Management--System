@@ -33,27 +33,14 @@ if (strlen($_SESSION['aid']==0)) {
             z-index: 999;
         }
 
-<<<<<<< HEAD
-    <style>
+
+    
   #chatbot-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 999;
   }
-=======
-        #chatIframe {
-            height: 400px;
-            max-height: 400px;
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
->>>>>>> 3a7a07709e5c0d3af1606682b422ad77f4c35837
 
   #open-chatbot {
     background-color: #4CAF50;
@@ -64,7 +51,7 @@ if (strlen($_SESSION['aid']==0)) {
     cursor: pointer;
   }
 
-<<<<<<< HEAD
+
   #chatbot-frame {
     display: none;
     position: fixed;
@@ -80,11 +67,6 @@ if (strlen($_SESSION['aid']==0)) {
     width: 300px; /* Adjust the width as needed */
   }
 </style>
-
-
-
-=======
->>>>>>> 3a7a07709e5c0d3af1606682b422ad77f4c35837
 </head>
 
 <body>

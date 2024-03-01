@@ -25,25 +25,77 @@ if (strlen($_SESSION['aid']==0)) {
 <!-- Custom Fonts -->
 <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <style>
-        /* Custom CSS for the button and iframe */
-        #toggleIframeBtn {
+        /* Chatbot button style */
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rectangular border-radius */
+    width: 120px; /* Adjust width as needed */
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensure button is above other elements */
+}
+
+.chatbot-button:focus {
+    outline: none;
+}
+
+
+        /* Chatbot frame style */
+        .chatbot-frame {
             position: fixed;
-            bottom: 20px;
+            bottom: 80px;
             right: 20px;
-            z-index: 999;
+            width: 350px;
+            max-height: 70vh;
+            overflow: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 9999; /* Ensure frame is above other elements */
         }
 
-        #chatIframe {
-            height: 400px;
-            max-height: 400px;
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+        .chatbot-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .chatbot-body {
+            padding: 15px;
+        }
+
+        .chatbot-input {
+            width: calc(100% - 40px);
+            padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-    </style>
+
+        .chatbot-send {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .chatbot-send:hover {
+            background-color: #0056b3;
+}
+</style>
 
 
 </head>
@@ -274,21 +326,14 @@ $cities=mysqli_num_rows($query5);
 	</div>
 
     <!-- Button to toggle the iframe -->
-    <button id="toggleIframeBtn" class="btn btn-primary">Toggle Chat</button>
+    <button class="chatbot-button" onclick="toggleChatbot()">Chat us</button>
+
 
 <!-- Iframe for the chat -->
 <iframe id="chatIframe" src="https://webchat.botframework.com/embed/student-bot?s=kaHvISwkEfE.PX69E6jLiJ7JuS29visa7-hEAXjhXJTVwgkpBIkAo8o"></iframe>
 	
 
-    <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Toggle the iframe when the button is clicked
-                document.getElementById('toggleIframeBtn').addEventListener('click', function () {
-                    var chatIframe = document.getElementById('chatIframe');
-                    chatIframe.style.display = (chatIframe.style.display === 'none' || chatIframe.style.display === '') ? 'block' : 'none';
-                });
-            });
-        </script>
+    
 	<script src="bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>
 
@@ -304,6 +349,14 @@ $cities=mysqli_num_rows($query5);
 	<script src="dist/js/sb-admin-2.js" type="text/javascript"></script>
 	
 	<script>
+
+<script>
+        function toggleChatbot() {
+            var chatbotFrame = document.querySelector('.chatbot-frame');
+            chatbotFrame.style.display === 'none' ? chatbotFrame.style.display = 'block' : chatbotFrame.style.display = 'none';
+        }
+
+    </script>
 function courseAvailability() {
 	$("#loaderIcon").show();
 jQuery.ajax({

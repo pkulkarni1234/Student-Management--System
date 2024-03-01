@@ -13,6 +13,7 @@ if (strlen($_SESSION['aid']==0)) {
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="script.js"></script>
 <title>Dashboard</title>
 
 <link href="bower_components/bootstrap/dist/css/bootstrap.min.css"

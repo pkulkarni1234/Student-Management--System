@@ -1,5 +1,5 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title:</h2><b><a href="https://iceparlour.azurewebsites.net/">Ice-Cream Parlour: Hassle-free Ordering Web App using Azure AI ChatBot Service.</b></a>
+<h2>Project Title:</h2><b><a href="https://iceparlour.azurewebsites.net/">Student Management System: Hassle-free Ordering Web App using Azure AI ChatBot Service.</b></a>
 <br>
 <h2>Project Details</h2>
 <b>Project Demo URL :</b> https://iceparlour.azurewebsites.net/ <br>

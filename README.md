@@ -69,3 +69,6 @@ The Student Management System (SMS) project aims to modernize educational admini
 </p>
  <br>
 </h2><b><a href="https://student1.azurewebsites.net/studentrecordms/">Student Management System: Web App using Azure AI ChatBot Service.</b></a>
+<h3>Sample Login</h3>
+<p>Username: admin<br>
+Password: Test@12345</p>

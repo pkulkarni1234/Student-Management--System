@@ -1,5 +1,5 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title:</h2><b><a href="https://iceparlour.azurewebsites.net/">Student Management System: Web App using Azure AI ChatBot Service.</b></a>
+<h2>Project Title:</h2><b><a href="https://student1.azurewebsites.net/studentrecordms/">Student Management System: Web App using Azure AI ChatBot Service.</b></a>
 <br>
 <h2>Project Details</h2>
 <b>Project Demo URL :</b>https://student1.azurewebsites.net/studentrecordms/ <br>
@@ -28,7 +28,8 @@ The Student Management System (SMS) project is a centralized software solution t
     <li>Azure SQL Database for Efficient Data Management</li>
 </ul>
 <b>Future Enhancements :</b><br>
-<p align="justify">The Ice-Cream Parlour Management System (ICPMS) isn't only a standalone venture but a foundation for ability future enhancements. Integrations with additional Azure offerings, which includes Azure Storage for coping with multimedia content and Azure Key Vault for more suitable security, could be explored. Moreover, monitoring and analytics via Azure Monitor and Azure Application Insights pave the manner for continuous improvement and optimization.</p>
+<p align="justify">
+In the future, the Student Management System project could benefit from several enhancements aimed at leveraging advanced technologies and improving overall functionality. Implementation of AI-driven insights would enable personalized learning experiences, tailoring educational paths based on individual student needs. Integrating Augmented Reality (AR) or Virtual Reality (VR) could provide students with immersive and engaging learning experiences. Additionally, automation features, such as automated grading and Internet of Things (IoT) for attendance tracking, would streamline administrative tasks, allowing educators to focus more on teaching. Connecting the system with industry certifications and internship platforms would enhance students' career development opportunities, while blockchain technology could ensure the security and transparency of academic records. These enhancements collectively aim to create a more dynamic, efficient, and student-centric learning environment within the Student Management System.</p>
 <h2>Core Azure Services</h2>
 <b>Azure App Service :</b><br><p align="justify"><br>The project utilizes Azure App Service to host the web application, ensuring scalability, reliability, and ease of deployment. This service enables seamless integration with other Azure components and provides a secure environment for the application.</p>
 
@@ -36,7 +37,7 @@ The Student Management System (SMS) project is a centralized software solution t
 <h2>Azure AI Service</h2>
 <b>Azure AI Chatbot Service :</b><br><br><p align="justify">Empowers the Chatbot to understand user queries and provide accurate responses based on the FAQs database.</p>
 <h2>Other Azure Technologies / Services</h2>
-<p align="justify">In Ice-Cream Parlour Management System (ICPMS), Azure Monitor and Azure Application Insights collaboratively form a dynamic duo, meticulously overseeing application health and person stories.</p>
+<p align="justify">In Student Management System Project(SMSP), securly manage student information for their future references.</p>
 
 <b>Azure Monitor :</b><p align="justify"><b>Real-time Performance Metrics :</b> Monitors vital overall performance indicators, ensuring the application runs seamlessly.<br>
 <b>Proactive Alerts :</b> Issues immediately alerts on deviations from set overall performance thresholds, enabling fast responses to capability disruptions.</p>
@@ -47,7 +48,7 @@ The Student Management System (SMS) project is a centralized software solution t
 <h2>Screenshots</h2>
 <h3>Azure App Service</h3>
 <b>Description :</b><p align="justify">Azure App Service provides a scalable and reliable hosting environment for the Multilingual Content Hub. It ensures seamless deployment and high availability, facilitating an optimal user experience.</p>
-<img src="https://github.com/snehaK212/icecream_1/blob/main/Screenshots/appservice.png" alt="azure-app-service"></img><br>
+<img src="" alt="azure-app-service"></img><br>
 <h3>Azure Databse for MySQL</h3>
 <b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
 <img src="https://github.com/snehaK212/icecream_1/blob/main/Screenshots/database.png" alt="azure-mysql-db-service"></img><br>

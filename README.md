@@ -1,10 +1,10 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title:</h2><b><a href="https://iceparlour.azurewebsites.net/">Student Management System: Hassle-free Ordering Web App using Azure AI ChatBot Service.</b></a>
+<h2>Project Title:</h2><b><a href="https://iceparlour.azurewebsites.net/">Student Management System: Web App using Azure AI ChatBot Service.</b></a>
 <br>
 <h2>Project Details</h2>
-<b>Project Demo URL :</b> https://iceparlour.azurewebsites.net/ <br>
-<b>Demo Video URL :</b> https://drive.google.com/file/d/1qR328GUfY_EJRz6TsiV1vj2K6JEIv_mS/view?usp=sharing <br>
-<b>Github Repository URL :</b> https://github.com/snehaK212/icecream_1 <br>
+<b>Project Demo URL :</b>https://student1.azurewebsites.net/studentrecordms/ <br>
+<b>Demo Video URL :</b> <br>
+<b>Github Repository URL :</b>https://github.com/pkulkarni1234/Student-Management--System  <br>
 <b>Industry :</b> Lifestyle and Technology<br>
 <h2>Azure Services Used </h2>
 <h3>

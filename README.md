@@ -65,9 +65,7 @@ In the future, the Student Management System project could benefit from several 
 
 <h2>Final Project Statement</h2>
 <p align="justify">
-The Ice-Cream Parlour Management System with Azure AI Chatbot Integration is a comprehensive solution that addresses the challenges of traditional icecream ordering systems. Leveraging Azure App Service and Azure MySQL Database ensures a scalable and secure environment for hosting the application and managing data. The incorporation of Azure AI Services enhances user support by providing an intelligent Chatbot capable of addressing user queries and offering quick access to a detailed FAQs section. The project not only streamlines icecream order operations but also sets the foundation for further enhancements and innovations in user interaction and support.
+The Student Management System (SMS) project aims to modernize educational administration through a comprehensive software solution. Key features include secure authentication, centralized student data management, automated attendance tracking, dynamic class scheduling, and examination management. The system promotes efficient communication and reporting for administrators, teachers, and students. Using cutting-edge technology, the SMS prioritizes scalability, security, and ease of maintenance. The project anticipates improved efficiency, enhanced communication, data accuracy, and user satisfaction. With a structured timeline, a dedicated team, and guidance from the project advisor, the SMS project is set to transform student management in educational institutions.
 </p>
-<p align="justify">
-<b>As we finish, Ice-Cream Parlour: Hassle-free Ordering isn't always just an utility; it's an ongoing exploration of endless communication possibilities. In this era of worldwide connectivity, this undertaking signifies a pivotal step toward a greater accessible and interconnected international.</b>
-</p> <br>
+ <br>
 </h2><b><a href="https://student1.azurewebsites.net/studentrecordms/">Student Management System: Web App using Azure AI ChatBot Service.</b></a>

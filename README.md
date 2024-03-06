@@ -3,7 +3,7 @@
 <br>
 <h2>Project Details</h2>
 <b>Project Demo URL :</b>https://student1.azurewebsites.net/studentrecordms/ <br>
-<b>Demo Video URL :</b> <br>
+<b>Demo Video URL :</b> https://drive.google.com/file/d/1UAZNhl2tZqliz4DJcqnh7oB2whMwg--V/view?usp=drive_link<br>
 <b>Github Repository URL :</b>https://github.com/pkulkarni1234/Student-Management--System  <br>
 <b>Industry :</b> Lifestyle and Technology<br>
 <h2>Azure Services Used </h2>

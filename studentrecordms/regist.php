@@ -98,6 +98,8 @@ if(isset($_POST['register'])){
                                 <input class="form-control" placeholder="Confirm Password" name="confirm_password" type="password" required>
                             </div>
                             <input type="submit" value="Register" name="register" class="btn btn-lg btn-success btn-block">
+<br>  <a href="login.php">Login Here</a>
+                             <input type="submit" value="Register" name="register" class="btn btn-lg btn-success btn-block">
                         </fieldset>
                     </form>
                 </div>

@@ -99,7 +99,7 @@ if(isset($_POST['register'])){
                             </div>
                             <input type="submit" value="Register" name="register" class="btn btn-lg btn-success btn-block">
 <br>  <a href="login.php">Login Here</a>
-                             <input type="submit" value="Register" name="register" class="btn btn-lg btn-success btn-block">
+                            
                         </fieldset>
                     </form>
                 </div>

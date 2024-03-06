@@ -51,10 +51,18 @@ In the future, the Student Management System project could benefit from several 
 <img src="https://github.com/pkulkarni1234/Student-Management--System/blob/main/studentrecordms/screenshots/webapp.png" alt="azure-app-service"></img><br>
 <h3>Azure Databse for MySQL</h3>
 <b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
+<<<<<<< HEAD
+<img src="https://github.dev/pkulkarni1234/Student-Management--System" alt="azure-mysql-db-service"></img><br>
+=======
 <img src="https://github.com/pkulkarni1234/Student-Management--System/blob/main/studentrecordms/screenshots/database.png" alt="azure-mysql-db-service"></img><br>
+>>>>>>> 8ea09df6a7dff5cab3def32ab518e9d33796c256
 <h3>Azure AI ChatBot Service</h3>
 <b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p>
+<<<<<<< HEAD
+<img src="" alt="azure-translator-ai-service"></img><br>
+=======
 <img src="https://github.com/pkulkarni1234/Student-Management--System/blob/main/studentrecordms/screenshots/chatbot.png" alt="azure-translator-ai-service"></img><br>
+>>>>>>> 8ea09df6a7dff5cab3def32ab518e9d33796c256
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
 <img src="https://github.com/pkulkarni1234/Student-Management--System/blob/main/studentrecordms/screenshots/project1.png" alt="final-project-demo"></img>

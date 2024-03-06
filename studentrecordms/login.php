@@ -62,7 +62,8 @@ if(isset($_POST['submit']))
                                 </div>
                               
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block">
+                            <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block">
+                            <input type="submit" value="login" name="Register" class="btn btn-lg btn-success btn-block">
                             </fieldset>
                         </form>
                     </div>

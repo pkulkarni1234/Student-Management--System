@@ -5,11 +5,11 @@ if(isset($_POST['submit']))
   {
     $uname=$_POST['id'];
     $Password=$_POST['password'];
-    $query=mysqli_query($con,"select ID,loginid from tbl_login where  loginid='$uname' && password='$Password' ");
+    $query=mysqli_query($con,"select ID,username from tb_login where  username='$uname' && password='$Password' ");
     $ret=mysqli_fetch_array($query);
     if($ret>0){
       $_SESSION['aid']=$ret['ID'];
-      $_SESSION['login']=$ret['loginid'];
+      $_SESSION['login']=$ret['username'];
      header('location:dashboard.php');
     }
     else{
@@ -58,13 +58,14 @@ if(isset($_POST['submit']))
                                 </div>
                                 <div class="form-group">
                             <input class="form-control" placeholder="Password" id="password"name="password" type="password" value="" required>
-                            <a href="password-recovery.php">Password Recovery</a>
+                           
                                 </div>
                               
                                 <!-- Change this to a button or input when using this as a form -->
-                            <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block">
-                            <a href="register1.php"><input type="submit" value="register" name="Register" class="btn btn-lg btn-success btn-block"></a>
+                                <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block"><br>
+                                <pre> <a href="password-recovery.php">Password Recovery</a>        <a href="regist.php">Register here</a></pre>
                             </fieldset>
+
                         </form>
                     </div>
                 </div>

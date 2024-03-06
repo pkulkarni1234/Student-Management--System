@@ -63,7 +63,7 @@ if(isset($_POST['submit']))
                               
                                 <!-- Change this to a button or input when using this as a form -->
                             <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block">
-                            <a hrref="register1.php"><input type="submit" value="register" name="Register" class="btn btn-lg btn-success btn-block"></a>
+                            <a href="register1.php"><input type="submit" value="register" name="Register" class="btn btn-lg btn-success btn-block"></a>
                             </fieldset>
                         </form>
                     </div>

@@ -63,6 +63,7 @@ if(isset($_POST['submit']))
                               
                                 <!-- Change this to a button or input when using this as a form -->
                                 <input type="submit" value="login" name="submit" class="btn btn-lg btn-success btn-block"><br>
+                                
                                 <pre> <a href="password-recovery.php">Password Recovery</a>        <a href="regist.php">Register here</a></pre>
                             </fieldset>
 
